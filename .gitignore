@@ -1,0 +1,11 @@
+node_modules/*
+.idea
+cypress/integration/examples/*
+cypress/integration/test.spec.js
+cypress/screenshots*
+cypress/videos*
+.vscode/
+package-lock.json
+cron/cron_error.log
+cron/cron_output.log
+cron/*
