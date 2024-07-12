@@ -1,0 +1,43 @@
+{
+  "name": "percy-test-liv",
+  "version": "1.0.0",
+  "description": "visual testing with percy/cypress",
+  "main": "index.js",
+  "dependencies": {
+    "cypress-real-events": "^1.7.6",
+    "puppeteer": "^5.3.1",
+    "scroll-to-bottomjs": "^1.1.0"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.27.3",
+    "@percy/cypress": "^3.1.1",
+    "cypress": "^12.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Hilal_B_P@bitbucket.org/delphinus/percy-test-liv.git"
+  },
+  "percy": {
+    "version": 2,
+    "snapshot": {
+      "widths": [
+        375,
+        1280
+      ],
+      "minHeight": 1024,
+      "percyCSS": "#nav-menu-container { display: none !important; } .youtube { display: none !important; } iframe { display: none !important; } .video-container"
+    },
+    "discovery": {
+      "network-idle-timeout": 700,
+      "concurrency": 20,
+      "disableCache": true
+    }
+  },
+  "author": "Hilal",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/delphinus/percy-test-liv#readme"
+}
